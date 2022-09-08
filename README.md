@@ -1,2 +1,2 @@
-# [Blog](torgeiba.github.io)
+# [Blog](https://torgeiba.github.io)
 Theme: https://github.com/jekyll/minima
