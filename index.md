@@ -1,3 +1,1 @@
-Hello!
-
-something something
+Welcome to the blog! 
