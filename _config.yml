@@ -2,3 +2,25 @@ theme: jekyll-theme-minimal
 title: Blog
 description: Probably mostly math and code :)
 theme: minima
+
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+    
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
+      
