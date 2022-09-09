@@ -67,3 +67,4 @@ symmetry in x and y
 The binomial theorem are related to the Bernstein polynomials, Bézier curves and
 can be used to prove the power rule in calculus (differentiation of monomials).
 It is also formally related to Leibniz rules, which take the same form, in umbral calculus.
+
