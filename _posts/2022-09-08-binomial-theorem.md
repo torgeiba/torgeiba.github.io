@@ -1,4 +1,4 @@
-# On the binomial theorem
+﻿# On the binomial theorem
 
 The binomial theorem is a useful tool when working with polynomials.
 It can be written as follows:
@@ -61,6 +61,26 @@ $$ (x + y)^d = \prod_{i=1}^d (x + y)  = \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i $$
 symmetry in x and y
 
 ## Proof of the theorem
+
+The proof of the theorem is a fairly straight forward induction based argument,
+
+assume it holds for a base case, and for degree $d$, then we need to show that it also holds for $d+1$
+
+$$(x+y)^{d+1} = (x+y)^{d} (x+y) = x (x+y)^{d} + y (x+y)^{d} $$
+
+starting from the right hand side we have
+
+$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \binom{d+1}{0} x^{d+1}y^0 + \sum_{i=1}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i $$,
+
+where we extracted the first and last term and used the recurrence relation property of the binomial coefficients to split them into two.
+
+
+$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \sum_{i=0}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i$$,
+
+
+Then since, we assumed that it holds for degree $d$ then we can substitute that in
+
+$$(x+y)^{d+1} = x \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i + y \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^id} $$
 
 ## Applications and connections to other polynomial relations
 
