@@ -50,7 +50,7 @@ of terms in the expansion, and in turn the sum of the binomial coefficients.
 
 
 
-The core aspect of the theorem is that it relates what is essentially a product of sums
+A core aspect of the theorem is that it relates what is essentially a product of sums
 to a sum of products.
 
 $$ (x + y)^d = \prod_{i=1}^d (x + y)  = \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i $$
