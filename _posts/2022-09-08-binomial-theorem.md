@@ -8,7 +8,7 @@ $$ (x + y)^d = \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i $$
 The name derives from the sum of two variables (monomial, binomial, ..., polynomial).
 The factor $\binom{d}{i}$ is called the binomial coefficient, and can be read as "$d$ choose $i$",
 alluding to the fact that the binomial coefficients count the number of (different) ways 
-of choosing $i$ (different) number of items from a set of $d$ items. Or to put it differently,
+of choosing $i$ (different) number of items from a set of $d$ items. Or to put it another way,
 the number of unique subsets of size $i$ of a set of size $d$. Or drawing $i$ items among $d$
 disregarding the order of the draws and without returning drawn items.
 
@@ -29,7 +29,7 @@ $$\binom{d}{0} = \binom{d}{d} = 1$$
 Since the factorial function counts the number of permutations of a sequence,
 the definition based on factorials can be interpreted as starting out with the number of
 permutations of $d$ elements and then accounting for the fact that we do not care about the
-order of the chosen elements ($i!$), or the order of the rest of the items $(d-i)!$, 
+order of the chosen elements, $i!$, or the order of the rest of the items, $(d-i)!$, 
 by dividing them out.
 
 The recurrence relation definition of the binomial coefficients provides and easy way to
