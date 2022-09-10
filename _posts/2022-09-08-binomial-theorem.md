@@ -109,11 +109,7 @@ we insert the terms back into the summation as the terms for $i=0$ and $i=d+1$
 
 $$\sum_{i=0}^{d+}  \binom{d+1}{i} x^{d+1-i}y^i $$
 
-which is the desired result
-
-
-
-$$(x+y)^{d+1} = (x+y)^{d} (x+y) = x (x+y)^{d} + y (x+y)^{d} $$
+which is the desired result.
 
 ## Applications and connections to other polynomial relations
 
