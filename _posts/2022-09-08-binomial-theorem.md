@@ -77,11 +77,6 @@ where we extracted the first and last term and used the recurrence relation prop
 
 $$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \sum_{i=0}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i$$,
 
-
-Then since, we assumed that it holds for degree $d$ then we can substitute that in
-
-$$(x+y)^{d+1} = x \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i + y \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^id} $$
-
 ## Applications and connections to other polynomial relations
 
 The binomial theorem are related to the Bernstein polynomials, Bézier curves and
