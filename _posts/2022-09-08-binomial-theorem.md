@@ -75,7 +75,7 @@ $$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}
 where we extracted the first and last term and used the recurrence relation property of the binomial coefficients to split them into two.
 
 
-$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \sum_{i=0}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i$$,
+$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \sum_{i=0}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i$$
 
 ## Applications and connections to other polynomial relations
 
