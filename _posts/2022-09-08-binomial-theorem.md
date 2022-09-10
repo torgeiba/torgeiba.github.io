@@ -66,7 +66,6 @@ The proof of the theorem is a fairly straight forward induction based argument,
 
 assume it holds for a base case, and for degree $d$, then we need to show that it also holds for $d+1$
 
-$$(x+y)^{d+1} = (x+y)^{d} (x+y) = x (x+y)^{d} + y (x+y)^{d} $$
 
 starting from the right hand side we have
 
@@ -74,8 +73,16 @@ $$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}
 
 where we extracted the first and last term and used the recurrence relation property of the binomial coefficients to split them into two.
 
+Then we simplify to
 
-$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \sum_{i=0}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i$$
+$$ y^{d+1} + x^{d+1} + \sum_{i=1}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i $$
+
+$$ y^{d+1} + x^{d+1} + \sum_{i=1}^{d} \binom{d}{i} x x^{d-i}y^i + \sum_{i=1}^{d} \binom{d}{i-1} x x^{d-i}y^i $$
+
+
+
+
+$$(x+y)^{d+1} = (x+y)^{d} (x+y) = x (x+y)^{d} + y (x+y)^{d} $$
 
 ## Applications and connections to other polynomial relations
 
