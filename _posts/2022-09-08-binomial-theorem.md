@@ -66,19 +66,50 @@ The proof of the theorem is a fairly straight forward induction based argument,
 
 assume it holds for a base case, and for degree $d$, then we need to show that it also holds for $d+1$
 
+starting from the left hand side we have
 
-starting from the right hand side we have
+$$(x + y)^{d+1}$$
 
-$$ \sum_{i=0}^{d+1} \binom{d+1}{i} x^{d+1-i}y^i = \binom{d+1}{d+1} x^{d+1-(d+1)}y^{d+1} + \binom{d+1}{0} x^{d+1}y^0 + \sum_{i=1}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i $$
+$$(x + y)^{d} (x + y)$$
 
-where we extracted the first and last term and used the recurrence relation property of the binomial coefficients to split them into two.
+Since we assumed it holds for degree $d$ we can substitute that in:
 
-Then we simplify to
+$$ \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i (x + y)$$
 
-$$ y^{d+1} + x^{d+1} + \sum_{i=1}^{d} (\binom{d}{i} + \binom{d}{i-1}) x x^{d-i}y^i $$
+we distribute the $(x+y)$ factor 
 
-$$ y^{d+1} + x^{d+1} + \sum_{i=1}^{d} \binom{d}{i} x x^{d-i}y^i + \sum_{i=1}^{d} \binom{d}{i-1} x x^{d-i}y^i $$
+$$ x \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i + y \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^i$$
 
+and distribute $x$ and $y$ again into their respective sums and update the exponents accordingly
+
+$$ \sum_{i=0}^d  \binom{d}{i} x^{d+1-i}y^i + \sum_{i=0}^d  \binom{d}{i} x^{d-i}y^{i+1}$$
+
+we change the summation index of the second sum to range to $1$ to ${d+1}$ and update the terms accordingly
+
+$$ \sum_{i=0}^d  \binom{d}{i} x^{d+1-i}y^i + \sum_{i=1}^{d+1}  \binom{d}{i-1} x^{d+1-i}y^{i}$$
+
+we temporarily extract the $i=0$ term from the first sum and the $i=d+1$ term from the second sum
+in order to match their ranges again
+
+$$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} + \sum_{i=1}^d  \binom{d}{i} x^{d+1-i}y^i + \sum_{i=1}^{d}  \binom{d}{i-1} x^{d+1-i}y^{i}$$
+
+Then we combine the sums
+
+$$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} +  \sum_{i=1}^d  (\binom{d}{i} + \binom{d}{i-1}) x^{d+1-i}y^i $$
+
+we use the recurrence property of the binomial coefficients to combine them
+
+$$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} +  \sum_{i=1}^d  \binom{d+1}{i} x^{d+1-i}y^i $$
+
+we use the fact that $\binom{d}{0} = \binom{d+1}{0} = \binom{d}{d} = \binom{d+1}{d+1} = 1$ to insert them again
+
+$$\binom{d+1}{0} x^{d+1}y^0 + \binom{d+1}{d+1} x^{0}y^{d+1} +  \sum_{i=1}^d  \binom{d+1}{i} x^{d+1-i}y^i $$
+
+we insert the terms back into the summation as the terms for $i=0$ and $i=d+1$
+
+$$\sum_{i=0}^{d+}  \binom{d+1}{i} x^{d+1-i}y^i $$
+
+which is the desired result
 
 
 
