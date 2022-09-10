@@ -95,7 +95,7 @@ $$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} + \sum_{i=1}^d  \binom{d}{
 
 Then we combine the sums
 
-$$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} +  \sum_{i=1}^d  \(\binom{d}{i} + \binom{d}{i-1}\) x^{d+1-i}y^i $$
+$$\binom{d}{0} x^{d+1}y^0 + \binom{d}{d} x^{0}y^{d+1} +  \sum_{i=1}^d  \left(\binom{d}{i} + \binom{d}{i-1}\right( x^{d+1-i}y^i $$
 
 we use the recurrence property of the binomial coefficients to combine them
 
