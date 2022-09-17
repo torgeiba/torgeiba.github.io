@@ -69,6 +69,7 @@ Namely, it does not contain any references to lists, dimension or indices,
 to basis vectors or coordinates. It also does not mention scalar (dot), inner- or cross products, norms, nor any vector product or division.
 Neither geometry or physics is mentioned or referred to, vectors are not described as arrows or directed line segments.
 There is also no mention on linear dependence, linear combinations or spans, but those are rather constructions that are built on top of the definition of a vector space.
+There is not mention of row or column vectors, and no transpose, just vectors.
 
 ### Formal expressions
 
@@ -86,6 +87,17 @@ The axioms can then be given as
 > 7. $a * (u + v) = a * u + a * v$
 > 8. $(a + b) * v = a * v + b * v$
 
+### An aside: Closure and linear subspaces
+
+It is important to keep in mind that the two operations that are part of the definition of vector spaces both take vectors from the space as input and
+output a vector *in the same space*. It is possible that a subset of a vector space is also a vector space with the same operations if applying those operations
+to the vectors in the subspace always maps back to vector in the subspace. 
+We say that the linear subspace is *closed* under the operations of vector addition and scalar multiplication.
+These subspaces can exist even if they do not contain all the vectors of the superset. 
+We call such a set a linear subspace, and they are vector spaces in their own right.
+All vector spaces are linear subspaces of themselves since they are subsets of themselves and closed under the operations
+The closure property is used in the definition of linear subspaces.
+
 ### Examples of vector spaces
 
 - "Ordinary" numbers
@@ -96,14 +108,23 @@ The axioms can then be given as
 - Matrices
 - Quaternions
 
-
 ### Linear maps and Linearity
+
+The operations that are used in the definition of vectorspaces are exactly the ones used in the definition of linearity
 
 - Additivity: $f(x + y) = f(x) + f(y)$
 - Homogeniety of degree 1: $f(\alpha x) = \alpha f(x)$ for all $\alpha$
 
+### Dual vector spaces
+
 ## Tensors
 
-## Dual vector spaces
+### Bilinearity and multilinearity
 
-## The tensor product of vector spaces
+### The tensor product of vector spaces
+
+
+
+
+
+### 
