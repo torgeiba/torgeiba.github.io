@@ -55,7 +55,16 @@ applying that same operation to the result instead.
 For the following formal expressions, we will use the symbol $+$ for *vector addition*, $*$ for scalar multiplication,
 $u, v, w$ for vectors from $V$ and $a, b, c$ for scalars from $F$
 
+The axioms can then be given as
 
+> 1. $(u + v) + w = u + (v + w)$
+> 2. $u + v = v + u$
+> 3. There is a vector $0 \in V$ such that $v + 0 = v$
+> 4. There is a vector $-v \in V$ for every $v \in V$ such that $v + (-v) = 0$
+> 5. $(ab) * v = a * (b * v)$
+> 6. $I * v = v$, where $I$ is the multiplicative identity of $F$ (usually denoted by just $1$) 
+> 7. $a * (u + v) = a * u + a * v$
+> 8. $(a + b) * v = a * v + b * v$
 
 ### Linearity
 
