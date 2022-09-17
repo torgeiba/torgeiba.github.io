@@ -1,5 +1,7 @@
 # Vectors and Tensors
 
+## Motivation
+
 Vectors and especially tensors can be a littlebit mysterious the first time you encounter them,
 and it doesn't help that they are often introduced by giving some intuitive idea or analogy that isn't entirely precice, or even really correct.
 So if you are trying to get a firm conceptual understanding of what they *are*, then it is better to ground all the intuition and examples
@@ -7,6 +9,12 @@ in a very formal and precise definition and build everything else on top of that
 
 In this post the goal is to give the *true* mathematical definitions of these concepts, show *how* to work with them, give some examples
 and then give some references that I found useful when I was exploring these topics.
+
+Vectors and tensors are *the* central objects in vector and tensor algebra / linear and multilinear algebra.
+Since linear algebra is one of the most well studied fields within all of mathematics, there is a large body of useful theorems
+that immediately becomes available once something is set identified as having a vector-type structure,
+especially if there are also some natural ways to define inner products and such.
+By using abstract definitions we broaden the applicability of those results as much as possible.
 
 Since tensors builds on top of the concepts of vectors, we will start with vectors.
 
@@ -56,6 +64,12 @@ applying that same operation to the result instead.
 - An identity element for an operation is an element that leaves the other operand unchanged
 - Inverse elements for an operation is an element that gives the identity element when applied to the element to which it is the inverse.
 
+It is useful to make some observations about what is *not* included in the definition of a vector space.
+Namely, it does not contain any references to lists, dimension or indices,
+to basis vectors or coordinates. It also does not mention scalar (dot), inner- or cross products, norms, nor any vector product or division. 
+There is also no mention on linear dependence, linear combinations or spans, but those are rather constructions that are built on top of the definition of a vector space.
+
+
 ### Formal expressions
 
 For the following formal expressions, we will use the symbol $+$ for *vector addition*, $*$ for scalar multiplication,
@@ -72,9 +86,13 @@ The axioms can then be given as
 > 7. $a * (u + v) = a * u + a * v$
 > 8. $(a + b) * v = a * v + b * v$
 
-### Linearity
+### Linear maps and Linearity
 
 - Additivity: $f(x + y) = f(x) + f(y)$
 - Homogeniety of degree 1: $f(\alpha x) = \alpha f(x)$ for all $\alpha$
 
+## Tensors
 
+## Dual vector spaces
+
+## The tensor product of vector spaces
