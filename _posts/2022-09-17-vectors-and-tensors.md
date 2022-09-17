@@ -37,10 +37,29 @@ So without further ado, here is the definition of a vector space:
 > 1. Associativity of vector addition
 > 2. Commutativity of vector addition
 > 3. Existence of an identity element of vector addition
-> 4. Existence of an inverse element of vector addition
+> 4. Existence of inverse elements of vector addition
 > 5. Compatability of vector addition with field multiplication
 > 6. Existence of an identity element of scalar multiplication
 > 7. Distrubutivity of scalar multiplication with respect to vector addition
 > 8. Distrubutivity of scalar multiplication with respect to field addition
+
+I'll give a brief informal explanation of the definition and axioms, and then some formal statements.
+
+Associativity is the property that the operation is invariant to the partitioning of the expression into binary operations.
+Commutativity is the property that the operation is symmetric in its arguments
+Distributivity of one operaton over the over is the property that applying the operation to each of the arguments of the second operation is the same as
+applying that same operation to the result instead.
+
+### Formal expressions
+
+For the following formal expressions, we will use the symbol $+$ for *vector addition*, $*$ for scalar multiplication,
+$u, v, w$ for vectors from $V$ and $a, b, c$ for scalars from $F$
+
+
+
+### Linearity
+
+- Additivity: $f(x + y) = f(x) + f(y)$
+- Homogeniety of degree 1: $f(\alpha x) = \alpha f(x)$ for all $\alpha$
 
 
