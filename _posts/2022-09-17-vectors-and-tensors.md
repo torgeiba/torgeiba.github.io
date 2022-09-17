@@ -86,6 +86,17 @@ The axioms can then be given as
 > 7. $a * (u + v) = a * u + a * v$
 > 8. $(a + b) * v = a * v + b * v$
 
+### Examples of vector spaces
+
+- "Ordinary" numbers
+- Directed line segments as vectors
+- Polynomials 
+- Functions ( infinite dimensional)
+- Arrays of numbers with vector operations
+- Matrices
+- Quaternions
+
+
 ### Linear maps and Linearity
 
 - Additivity: $f(x + y) = f(x) + f(y)$
