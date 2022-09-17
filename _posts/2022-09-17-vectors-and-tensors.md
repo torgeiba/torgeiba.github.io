@@ -33,14 +33,14 @@ When we now define a vector space we can then start understand vectors to be the
 So without further ado, here is the definition of a vector space:
 
 > A vector space over a field $F$ is a set $V$, along with two binary operations, called vector addition and scalar multiplication that act on the elements of $V$,
-called vectors, and must satisfy the following eight axioms:
-1. Associativity of vector addition
-2. Commutativity of vector addition
-3. Existence of an identity element of vector addition
-4. Existence of an inverse element of vector addition
-5. Compatability of vector addition with field multiplication
-6. Existence of an identity element of scalar multiplication
-7. Distrubutivity of scalar multiplication with respect to vector addition
-8. Distrubutivity of scalar multiplication with respect to field addition
+> called vectors, and must satisfy the following eight axioms:
+> 1. Associativity of vector addition
+> 2. Commutativity of vector addition
+> 3. Existence of an identity element of vector addition
+> 4. Existence of an inverse element of vector addition
+> 5. Compatability of vector addition with field multiplication
+> 6. Existence of an identity element of scalar multiplication
+> 7. Distrubutivity of scalar multiplication with respect to vector addition
+> 8. Distrubutivity of scalar multiplication with respect to field addition
 
 
