@@ -1,6 +1,6 @@
 # Vectors and Tensors
 
-![A painting of a vector space by DALL-E](/torgeiba.github.io/assets/images/DALL·E 2022-09-18 01.00.39 - a colorful abstract digital art painting of a vector space with lines grids.png)
+![A painting of a vector space by DALL-E](/assets/images/DALL·E 2022-09-18 01.00.39 - a colorful abstract digital art painting of a vector space with lines grids.png)
 
 ## Motivation
 
