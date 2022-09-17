@@ -1,7 +1,9 @@
 # Vectors and Tensors
 
 
-![A painting of a vector space by DALL-E](/assets/images/DALL-E_2022-09-18_01.00.39-a_colorful_abstract_digital_art_painting_of_a_vector_space_with_lines_grids.png)
+![A painting of a vector space by DALL-E](/assets/images/DALL-E_2022-09-18_01.00.39-a_colorful_abstract_digital_art_painting_of_a_vector_space_with_lines_grids.png | width=200
+
+![A painting of a vector space by DALL-E](/assets/images/DALL·E2022-09-1801.02.57-acolorfulabstractdigitalartpaintingofavectorspacewithlinesgrids.png | width=200
 
 ## Motivation
 
