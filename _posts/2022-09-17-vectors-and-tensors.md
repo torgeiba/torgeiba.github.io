@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Vectors and especially tensors can be a littlebit mysterious the first time you encounter them,
+Vectors and especially tensors can be a little bit mysterious the first time you encounter them,
 and it doesn't help that they are often introduced by giving some intuitive idea or analogy that isn't entirely precice, or even really correct.
 So if you are trying to get a firm conceptual understanding of what they *are*, then it is better to ground all the intuition and examples
 in a very formal and precise definition and build everything else on top of that.
