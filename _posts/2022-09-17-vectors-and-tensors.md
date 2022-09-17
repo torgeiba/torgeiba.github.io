@@ -66,9 +66,9 @@ applying that same operation to the result instead.
 
 It is useful to make some observations about what is *not* included in the definition of a vector space.
 Namely, it does not contain any references to lists, dimension or indices,
-to basis vectors or coordinates. It also does not mention scalar (dot), inner- or cross products, norms, nor any vector product or division. 
+to basis vectors or coordinates. It also does not mention scalar (dot), inner- or cross products, norms, nor any vector product or division.
+Neither geometry or physics is mentioned or referred to, vectors are not described as arrows or directed line segments.
 There is also no mention on linear dependence, linear combinations or spans, but those are rather constructions that are built on top of the definition of a vector space.
-
 
 ### Formal expressions
 
