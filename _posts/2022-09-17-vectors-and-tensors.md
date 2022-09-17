@@ -3,6 +3,9 @@
 
 ![A painting of a vector space by DALL-E](/assets/images/DALL·E 2022-09-18 01.00.39 - a colorful abstract digital art painting of a vector space with lines grids.png)
 
+![A painting of a vector space by DALL-E](https://user-images.githubusercontent.com/5385533/190879492-df97e0f3-64e7-4fa4-b12e-8a6f55c1a1d8.png)
+
+
 ## Motivation
 
 Vectors and especially tensors can be a little bit mysterious the first time you encounter them,
