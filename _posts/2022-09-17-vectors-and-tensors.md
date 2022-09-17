@@ -49,12 +49,12 @@ I'll give a brief informal explanation of the definition and axioms, and then so
 I won't give a detailed definition of a field here, but you can either refer to the definition on wikipedia,
 or just think of it as any number system that satisfies the algebraic rules of elementary algebra with the operations of addition, subtraction, multiplication and division. Examples include the rational, real and complex numbers.
 
-Associativity is the property that the operation is invariant to the partitioning of the expression into binary operations.
-Commutativity is the property that the operation is symmetric in its arguments
-Distributivity of one operaton over the over is the property that applying the operation to each of the arguments of the second operation is the same as
+- Associativity is the property that the operation is invariant to the partitioning of the expression into binary operations.
+- Commutativity is the property that the operation is symmetric in its arguments
+- Distributivity of one operaton over the over is the property that applying the operation to each of the arguments of the second operation is the same as
 applying that same operation to the result instead.
-An identity element for an operation is an element that leaves the other operand unchanged
-Inverse elements for an operation is an element that gives the identity element when applied to the element to which it is the inverse.
+- An identity element for an operation is an element that leaves the other operand unchanged
+- Inverse elements for an operation is an element that gives the identity element when applied to the element to which it is the inverse.
 
 ### Formal expressions
 
