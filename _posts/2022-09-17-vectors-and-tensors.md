@@ -152,5 +152,14 @@ Some examples of bilinear operators include regular multiplication of numbers, t
 
 ### Covariance and Contravariance
 
+Dual vectors are also frequently called *covectors* or *linear forms*, the components of a vector in a basis are called *covariant* or
+*contravariant* depending on whether they scale proportionally or inversely proportionally with the change to the basis vectors.
+Covariant components are usually written using *lower indices*, whilst contravariant components are usually written using *upper indices*.
+
+It is important to note that vectors themselves do not change with a change of basis, and are therefore *invariant* to change of basis.
+It is only the *components* of a vector *in a basis* that can be covariant or contravariant.
+
+
+
 ### The Metric Tensor
 
