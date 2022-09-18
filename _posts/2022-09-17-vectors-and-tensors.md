@@ -21,9 +21,9 @@ By using abstract definitions we broaden the applicability of those results as m
 
 Since tensors builds on top of the concepts of vectors, we will start with vectors.
 
-![Another painting of a vector space by DALL-E](/assets/images/DALL-E2022-09-1801.02.57-acolorfulabstractdigitalartpaintingofavectorspacewithlinesgrids.png)
-
 ## Vectors
+
+![Another painting of a vector space by DALL-E](/assets/images/DALL-E2022-09-1801.02.57-acolorfulabstractdigitalartpaintingofavectorspacewithlinesgrids.png)
 
 Some common ways of explaining what vectors are often include "A vector is like a little arrow (directed line segment)", "A vector is the difference of two points"
 or "A vector is just a list (of numbers)".
