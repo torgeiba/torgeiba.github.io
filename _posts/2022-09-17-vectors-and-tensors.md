@@ -126,6 +126,13 @@ The operations that are used in the definition of vectorspaces are exactly the o
 
 ### Dual vector spaces
 
+The dual vector space of a vector space is the vector space consisting of *all* linear functions from $V$ to $F$.
+The dual basis is a basis for the dual space with has the property that the dual basis vectors evaluated with the primal basis vectors
+as arguments gives the Kronecker delta.
+That is for basis vectors $e_i$ and dual basis vectors $e^*_j$ we have
+
+$$e^*_j ( e_i ) = \delta_ij$$
+
 ## Tensors
 
 ![A painting of a tensor space by DALL-E](/assets/images/DALL-E2022-09-1801.08.40-avividabstractdigitalartpaintingofamathematicaltensorproductspacewithdepthandfogaroundareasegmentsdualityvolumesrotationsandpro.png)
