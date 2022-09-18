@@ -1,9 +1,7 @@
 # Vectors and Tensors
 
-
 ![A painting of a vector space by DALL-E](/assets/images/DALL-E_2022-09-18_01.00.39-a_colorful_abstract_digital_art_painting_of_a_vector_space_with_lines_grids.png)
-
-![Another painting of a vector space by DALL-E](/assets/images/DALL-E2022-09-1801.02.57-acolorfulabstractdigitalartpaintingofavectorspacewithlinesgrids.png)
+> A painting of an abstract vector space by DALL-E
 
 ## Motivation
 
@@ -22,6 +20,8 @@ especially if there are also some natural ways to define inner products and such
 By using abstract definitions we broaden the applicability of those results as much as possible.
 
 Since tensors builds on top of the concepts of vectors, we will start with vectors.
+
+![Another painting of a vector space by DALL-E](/assets/images/DALL-E2022-09-1801.02.57-acolorfulabstractdigitalartpaintingofavectorspacewithlinesgrids.png)
 
 ## Vectors
 
@@ -123,6 +123,8 @@ The operations that are used in the definition of vectorspaces are exactly the o
 ### Dual vector spaces
 
 ## Tensors
+
+![A painting of a tensor space by DALL-E](/assets/images/DALL-E2022-09-1801.08.40-avividabstractdigitalartpaintingofamathematicaltensorproductspacewithdepthandfogaroundareasegmentsdualityvolumesrotationsandpro.png)
 
 ### Bilinearity and multilinearity
 
