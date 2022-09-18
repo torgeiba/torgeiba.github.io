@@ -130,8 +130,11 @@ The operations that are used in the definition of vectorspaces are exactly the o
 
 ### The tensor product of vector spaces
 
+### The Evaluation Map
 
+### Tensor Contraction
 
+### Covariance and Contravariance
 
+### The Metric Tensor
 
-### 
