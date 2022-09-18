@@ -120,6 +120,10 @@ The operations that are used in the definition of vectorspaces are exactly the o
 - Additivity: $f(x + y) = f(x) + f(y)$
 - Homogeniety of degree 1: $f(\alpha x) = \alpha f(x)$ for all $\alpha$
 
+### Dimensionality, bases, linear dependence and spans
+
+
+
 ### Dual vector spaces
 
 ## Tensors
@@ -127,6 +131,18 @@ The operations that are used in the definition of vectorspaces are exactly the o
 ![A painting of a tensor space by DALL-E](/assets/images/DALL-E2022-09-1801.08.40-avividabstractdigitalartpaintingofamathematicaltensorproductspacewithdepthandfogaroundareasegmentsdualityvolumesrotationsandpro.png)
 
 ### Bilinearity and multilinearity
+
+Bilinearity is the property that a function is linear in each of its two arguments *separately*.
+
+That is, a functions $f$ is linear if
+
+$$f(a * u + v, w) = a * f(u, w) + f(v, w)$$
+
+and
+
+$$f(u, a * v + w) = a * f(u, v) + f(u, w)$$
+
+Some examples of bilinear operators include regular multiplication of numbers, the dot product and the cross product.
 
 ### The tensor product of vector spaces
 
