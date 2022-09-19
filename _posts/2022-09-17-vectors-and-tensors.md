@@ -171,7 +171,13 @@ $$u \otimes (a * v + w) = a * u \otimes v + u \otimes w$$
 So then it may be tempting to say that the definition of tensors in the tensor product space $U \otimes V$ is just the union of all the tensor products of vectors from $U$ with vectors from $V$. However, it is easy to show that this would leave out tensors on the form $u \otimes v + r \otimes s$, if we let $u$, $v$, $r$, and $s$
 be linearly independent vectors from a four-dimensional space $V$ and we consider the tensor product space $V \otimes V$.
 
+So we can do to remedy this is to include every linear combination of all tensor products of vectors from $U$ and vectors from $V$.
+Since $U \otimes V$ is a vector space, it is possible to choose a basis for it and taking the span of the basis vectors of the tensor product space
+should therefore yield all the tensors in that space. But since the result does not depend on which basis was chosen, the result is basis-independent.
+It is important that the tensor product of $U$ and $V$ should not depend on a choice of basis in either.
 
+Some more abstract, but equivalent, definitions of the tensor product of vector spaces that do not referr to a basis at all
+are via quotient spaces or via the universal property.
 
 ### The Evaluation Map
 
