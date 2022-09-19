@@ -141,7 +141,7 @@ $$e^*_j ( e_i ) = \delta_ij$$
 
 Bilinearity is the property that a function is linear in each of its two arguments *separately*.
 
-That is, a functions $f$ is linear if
+That is, a functions $f$ is bilinear if
 
 $$f(a * u + v, w) = a * f(u, w) + f(v, w)$$
 
@@ -152,6 +152,26 @@ $$f(u, a * v + w) = a * f(u, v) + f(u, w)$$
 Some examples of bilinear operators include regular multiplication of numbers, the dot product and the cross product.
 
 ### The tensor product of vector spaces
+
+As with vectors, a good way to define tensors is as elements of tensor products of vector spaces.
+But again, that begs the question what the definition of tensor products of vector spaces is.
+Some care must be taken, however, because while tensor products of vectors are fairly straight forward to define, 
+*not all* tensors are (just) tensor products of vectors. It is the case though that all tensors are elements of tensorproducts of vector spaces.
+With that in mind, let's look at the properties that the tensor product of vectors must satisfy.
+In essense the properties are simply the properties of bilinearity.
+The tensor product of $u \in U$ and $v \in V$ is denoted $ u \otimes v $ and satifies the properties
+$$ u \otimes v $$
+
+$$(a * u + v) \otimes w = a *  u \otimes w + v \otimes w$$
+
+and
+
+$$u \otimes (a * v + w) = a * u \otimes v + u \otimes w$$
+
+So then it may be tempting to say that the definition of tensors in the tensor product space $U \otimes V$ is just the union of all the tensor products of vectors from $U$ with vectors from $V$. However, it is easy to show that this would leave out tensors on the form $u \otimes v + r \otimes s$, if we let $u$, $v$, $r$, and $s$
+be linearly independent vectors from a four-dimensional space $V$ and we consider the tensor product space $V \otimes V$.
+
+
 
 ### The Evaluation Map
 
