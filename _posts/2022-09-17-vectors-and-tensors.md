@@ -195,3 +195,13 @@ It is only the *components* of a vector *in a basis* that can be covariant or co
 
 ### The Metric Tensor
 
+
+## Resources and references
+
+[A small set of lectures on introducing tensors by 
+Daniel Chan](https://www.youtube.com/watch?v=BBBoBZPqVlI&list=PLgAugiET8rrIGTphP-IfbxixpAZDO3UHC)
+
+[Tensors for beginners by eigenchris](https://www.youtube.com/watch?v=8ptMTLzV4-I&list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG)
+This series uses index notation for tensors, but gives some good intuition and a feel for how tensors work.
+
+
