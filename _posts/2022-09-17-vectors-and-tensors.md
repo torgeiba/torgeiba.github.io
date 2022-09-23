@@ -131,7 +131,7 @@ The dual basis is a basis for the dual space with has the property that the dual
 as arguments gives the Kronecker delta.
 That is for basis vectors $e_i$ and dual basis vectors $e^*_j$ we have
 
-$$e^*_j ( e_i ) = \delta_ij$$
+$$e^*_j ( e_i ) = \delta_{ij}$$
 
 ## Tensors
 
