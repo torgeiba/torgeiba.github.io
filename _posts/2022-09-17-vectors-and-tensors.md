@@ -209,3 +209,5 @@ This series uses index notation for tensors, but gives some good intuition and a
 ["Linear Algebra via Exterior Products" - Book by Sergei Winitzki](https://sites.google.com/site/winitzki/linalg)
 This book is more focused on linear algebra and the exterior product, but also covers the tensor product in a good way.
 
+["What is a tensor anyway?" by Michael Penn](https://www.youtube.com/watch?v=K7f2pCQ3p3U)
+Although perhaps not suitable as a first introduction to tensors, it's a good 'take on tensor products from a slightly different point of view', as he puts it.
