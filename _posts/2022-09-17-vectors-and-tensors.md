@@ -205,3 +205,7 @@ Daniel Chan](https://www.youtube.com/watch?v=BBBoBZPqVlI&list=PLgAugiET8rrIGTphP
 This series uses index notation for tensors, but gives some good intuition and a feel for how tensors work.
 
 ["A Concrete Introduction to Tensor Products" by Mu Prime Math](https://www.youtube.com/watch?v=KnSZBjnd_74)
+
+["Linear Algebra via Exterior Products" - Book by Sergei Winitzki](https://sites.google.com/site/winitzki/linalg)
+This book is more focused on linear algebra and the exterior product, but also covers the tensor product in a good way.
+
