@@ -211,3 +211,7 @@ This book is more focused on linear algebra and the exterior product, but also c
 
 ["What is a tensor anyway?" by Michael Penn](https://www.youtube.com/watch?v=K7f2pCQ3p3U)
 Although perhaps not suitable as a first introduction to tensors, it's a good 'take on tensor products from a slightly different point of view', as he puts it.
+
+["Riemannian Geometry" by Math Curator Zanachan](https://www.youtube.com/watch?v=gvl5qumQ01I&list=PL3fptI5bQCR6I7c1vpNWmHYXlYZHWcoQa)
+A playlist on Riemannian Geometry, but the first few videos are on tensors and exterior products.
+
