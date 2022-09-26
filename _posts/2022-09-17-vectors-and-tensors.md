@@ -159,7 +159,7 @@ Some care must be taken, however, because while tensor products of vectors are f
 *not all* tensors are (just) tensor products of vectors. It is the case though that all tensors are elements of tensorproducts of vector spaces.
 With that in mind, let's look at the properties that the tensor product of vectors must satisfy.
 In essense the properties are simply the properties of bilinearity.
-The tensor product of $u \in U$ and $v \in V$ is denoted $ u \otimes v $ and satifies the properties
+The tensor product of $u \in U$ and $v \in V$ is denoted $u \otimes v$ and satifies the properties
 
 $$(a * u + v) \otimes w = a *  u \otimes w + v \otimes w$$
 
