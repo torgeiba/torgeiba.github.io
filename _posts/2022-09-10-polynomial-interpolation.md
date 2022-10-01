@@ -38,7 +38,9 @@ $$g(X) = ||r(X)||$$
 ## Parametric lines and curves
 
 The previous examples were abstract topological, and implicit non-parametric, respectively.
-We can also represent the line using an explicit parametric approach. In this case, we can define a function that takes a parameter $t$, which is often conceptualized as the travel time, and gives an explicit point on the line. We can identify this point $X$ as a function of $t$ with
+We can also represent the line using an explicit parametric approach. 
+In this case, we can define a function that takes a parameter $t$, which is often conceptualized as the travel time, 
+and gives an explicit point on the line. We can identify this point $X$ as a function of $t$ with
 
 $$X(t) = (B - A) t + A$$
 
@@ -55,6 +57,49 @@ $$X(s) = (1 - s)B + sA$$
 where the order of $A$ and $B$ is reversed. Here, the associated parameter values of are changed, but the image of the function is unchanged.
 The parametrizations are related by $s = 1 - t$. Other parametrizations can be given by scaling and translating $t$.
 
+### Linear and affine
+
+The function $X(t)$ is a line through $A$ and $B$ and is often referred to as *linear interpolation*, 
+or *lerp* for short, especially in computer graphics and animation fields. The function itself is technically not linear, 
+but *affine* because of the constant term in the expression. 
+For real valued functions this is the same as the difference between $f(x) = ax$ and $f(x) = ax + b$, 
+where the former function is linear and the latter function is affine. 
+Linear functions are special cases of affine functions with the constant term set to zero, while affine functions can be represented as
+linear function in one extra variable, say $y$ with the additional constraint that the variables sum to one. e.g.
+
+$$f(x) = ax + by$$
+
+and 
+
+$$ x + y = 1$$
+
+so that we can solve for $y$ to find that $y = 1 - x$ and retrieve the familiar form of the affine function
+
+$$f(x) = ax + b(1-x) $$
+
+The same is also true for vector valued linear and affine functions, and analogously for multilinear and multiaffine functions.
+
+## More points
+
+If we want to parametrically interpolate more than two points, we can no longer use just one line, unless the points happen to be colinear.
+We can either break the interpolating function into linear pieces, giving a piecewise defined function consisting of line segments between each pair of neighbouring
+points in the sequence, or, we can interpolate the points by a curve. The curve can be made out of various classes of functions, for example polynomials, 
+rational functions, or trigonometric functions. 
+Each approach have advantages and disadvantages. Combining the piecewise approach with smooth functions gives rise to various *spline* techniques,
+most commonly polynomial splines.
+
+## Polynomial interpolation
+
+In order for a polynomial function to interpolate a set of points, the polynomial must in general be of degree one less than the number of points we wish to
+interpolate. E.g linear (degree one) to interpolate two points, and cubic (degree three) to interpolate four points.
+Keep in mind that in degenerate cases, the interpolating polynomial has lower degree than the number of points.
+For example if all points coincide, then the interpolating polynomial is just a constant. If they are colinear, then the polynomial is degree one,
+and if they all lie on a parabola, then the polynomial is quadratic. But we can always interpolate $N$ points with a degree $d = N-1$ polynomial if we include
+the lower degree polynomials as special cases of the degree $d$ polynomials.
+
+Polynomials can be represented in various different bases, as linear combinations of basis polynomials,
+but in general the interpolating polynomials of a set of points is *unique*.
+The various interpolating polynomials are just the same polynomial expressed in different bases, e.g. Lagrange interpolation, Newton interpolation, etc.
 
 
 
