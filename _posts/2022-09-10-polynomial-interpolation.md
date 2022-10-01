@@ -147,7 +147,7 @@ or in product notation
 $$\ell_i(x) = \prod_{\substack{j=0\\ j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
 
 ![polynomial plot](/assets/images/lagrange_basis_polynomial.png)
-> A plot of the function $\frac{\left(\left(x\ -\frac{1}{2}\right)\left(x-1\right)\left(x-2\right)\left(x-\frac{5}{2}\right)\ \right)}{\left(\frac{3}{2}\ -\frac{1}{2}\right)\left(\frac{3}{2}-1\right)\left(\frac{3}{2}-2\right)\left(\frac{3}{2}-\frac{5}{2}\right)}$
+> A plot of the function $\frac{\left(x\ -\frac{1}{2}\right)\left(x-1\right)\left(x-2\right)\left(x-\frac{5}{2}\right)\}{\left(\frac{3}{2}\ -\frac{1}{2}\right)\left(\frac{3}{2}-1\right)\left(\frac{3}{2}-2\right)\left(\frac{3}{2}-\frac{5}{2}\right)}$
 
 These basis polynomials are called the [Lagrange basis polynomials](https://en.wikipedia.org/wiki/Lagrange_polynomial)
 
