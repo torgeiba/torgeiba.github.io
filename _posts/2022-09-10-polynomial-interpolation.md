@@ -156,7 +156,7 @@ These basis polynomials are called the [Lagrange basis polynomials](https://en.w
 
 The final interpolating polynomial can then be expressed as simply
 
-$$p(x) = \sum_{i = 0} y_i \ell_i(x)$$
+$$p(x) = \sum_{i = 0}^d y_i \ell_i(x)$$
 
 
 
