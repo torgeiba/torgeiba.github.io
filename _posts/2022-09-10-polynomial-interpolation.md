@@ -119,6 +119,9 @@ Now, how do we come up with such basis functions? Let's start with considering p
 
 $$\ell(x) = (x - x_0)(x - x_1) \ldots (x - x_n)$$
 
+[polynomial plot](/assets/images/polynomial_plot.png)
+> A plot of the function $\left(x\ -\frac{1}{2}\right)\left(x-1\right)\left(x-2\right)\left(x-\frac{5}{2}\right)$
+
 It is clear that $\ell(x)$ is zero at $x = x_i$ for all $i = 1 \ldots n$, since one of the factors in the product would be zero, 
 and thereby making the entire expression zero. Another property of this polynomial is that it is nonzero everywhere else, there are no other roots of the polynomial.
 
