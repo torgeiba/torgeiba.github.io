@@ -154,5 +154,9 @@ These basis polynomials are called the [Lagrange basis polynomials](https://en.w
 > for the node sequence $x_0 = \frac{1}{2}$, $x_1 = 1$, $x_2 = \frac{3}{2}$, $x_3 = 2$ and $x_4 = \frac{5}{2}$
 
 
+The final interpolating polynomial can then be expressed as simply
+
+$$p(x) = \sum_{i = 0} y_i \ell_i(x)$$
+
 
 
