@@ -16,5 +16,14 @@ $$g(X) = ||X - A|| + ||X - B|| - ||B - A||$$
 This function makes use of the triangle identity, and is equal to zero when the three points $X$, $A$ and $B$ are collinear.
 Therefore the function indicates whether a point is on the straight line that goes through $A$ and $B$.
 If we also want to indicate whether $X$ is on the line segment between the points, and not outside, we must also require that
-$||X - A|| \le  ||B - A||$ and $||X - B|| \le  ||B - A||$ 
+
+$$||X - A|| \le  ||B - A||$$
+
+and
+
+$$||X - B|| \le  ||B - A||$$
+
+If we have a dot product then we could also have used it to find the projection $p(X)$ and rejection $r(X)$ of the point $X$ to and from the line
+
+$$p(X)  =  \fract{(X - A) \cdot (B - A)}{(B - A) \cdot (B - A)} (B - A) + A$$
 
