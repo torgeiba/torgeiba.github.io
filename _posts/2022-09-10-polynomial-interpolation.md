@@ -93,6 +93,8 @@ most commonly polynomial splines.
 
 ## Polynomial interpolation
 
+![Polynomials](/assets/images/DALL-E_2022-10-01_16.33.13_-_a_slick_grungy_plot_of_a_mathematical_polynomial_graph.png)
+
 In order for a polynomial function to interpolate a set of points, the polynomial must in general be of degree one less than the number of points we wish to
 interpolate. E.g linear (degree one) to interpolate two points, and cubic (degree three) to interpolate four points.
 Keep in mind that in degenerate cases, the interpolating polynomial has lower degree than the number of points.
