@@ -110,37 +110,37 @@ So how can we construct these polynomials? Let's try to find a set of suitable b
 that finding the coefficients of the polynomial interpolating the points becomes easy.
 
 A polynomial $p(x)$ is said to interpolate points $y_i$ at $x_i$ if $p(x_i) = y_i$ for all $i$.
-If we have a set of basis polynomials $\ell_i(x)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
-then finding the coefficients would be easy, since we could simply set the coefficient of $b_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by 
+If we have a set of basis polynomials $\ell_i(x)$ defined in such a way that $\ell_i(x_i) = 1$ and $\ell_i(x_j) = 0$ for all $i \neq j$,
+then finding the coefficients would be easy, since we could simply set the coefficient of $\ell_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by 
 definition, and thereby canceling all other terms in the polynomials. They would therefore not change the value of $p(x)$ in that position, and we would get
 that $p(x_i) = y_i$, as required.
 
 Now, how do we come up with such basis functions? Let's start with considering polynomials on the form
 
-$$b(x) = (x - x_0)(x - x_1) \ldots (x - x_n)$$
+$$\ell(x) = (x - x_0)(x - x_1) \ldots (x - x_n)$$
 
-It is clear that $b(x)$ is zero at $x = x_i$ for all $i = 1 \ldots n$, since one of the factors in the product would be zero, 
+It is clear that $\ell(x)$ is zero at $x = x_i$ for all $i = 1 \ldots n$, since one of the factors in the product would be zero, 
 and thereby making the entire expression zero. Another property of this polynomial is that it is nonzero everywhere else, there are no other roots of the polynomial.
 
 So now we have found a polynomial that is zero on *all* the given points, so now we need to find a way to make the polynomial be non-zero on one of them.
 Again, this is easy since we can simply omit that factor from the product.
 Let's say we want the polynomial to be nonzero at $x_i$, then we just omit the $(x - x_i)$ factor to get
 
-$$b(x) = (x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)$$
+$$\ell(x) = (x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)$$
 
-So far so good, but we have not yet found the desired basis polynomials. We didn't just require that the basis polynomials $b_i$ were non-zero at $x_i$ but that they
+So far so good, but we have not yet found the desired basis polynomials. We didn't just require that the basis polynomials $\ell_i$ were non-zero at $x_i$ but that they
 should be equal to one at that point. The fix for this is also straightforward, we must find an expression for the value of the previous polynomial at $x_i$ and 
-divide by that value to get one. For any $b_i$ we can find the value by simply evaluating $b$ at $x_i$ to get
+divide by that value to get one. For any $\ell_i$ we can find the value by simply evaluating $\ell$ at $x_i$ to get
 
-$$b(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)$$
+$$\ell(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)$$
 
 Since this is just a scaling factor, the polynomial will still have the prescribed roots at $x_j$ for $i \neq j$, and we get the final form
 
-$$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)}{(x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)}$$
+$$\ell_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)}{(x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)}$$
 
 or in product notation
 
-$$b_i(x) = \prod_{\substack{j=0\\ j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
+$$\ell_i(x) = \prod_{\substack{j=0\\ j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
 
 These basis polynomials are called the [Lagrange basis polynomials](https://en.wikipedia.org/wiki/Lagrange_polynomial)
 
