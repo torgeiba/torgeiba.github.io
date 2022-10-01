@@ -42,7 +42,19 @@ We can also represent the line using an explicit parametric approach. In this ca
 
 $$X(t) = (B - A) t + A$$
 
-This function returns $A$ when $t = 0$, $B$ when $t = 1$ and some point in the line segment when $t$ is in the interval $[0, 1]$
+This function returns $A$ when $t = 0$, $B$ when $t = 1$ and some point in the line segment when $t$ is in the interval $[0, 1]$.
+With some reordering, using the distributive property, we can alternatively write it as
+
+$$X(t) = (1 - t)A + tB$$
+
+Which can be interpreted as a fade out of $A$ and a fade in of $B$ as $t$ moves from $0$ to $1$.
+This interpolation between $A$ and $B$ could also be represented by a different parameterization, e.g. 
+
+$$X(s) = (1 - s)B + sA$$
+
+where the order of $A$ and $B$ is reversed. Here, the associated parameter values of are changed, but the image of the function is unchanged.
+The parametrizations are related by $s = 1 - t$. Other parametrizations can be given by scaling and translating $t$.
+
 
 
 
