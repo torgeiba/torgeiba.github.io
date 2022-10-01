@@ -106,5 +106,15 @@ Polynomials can be represented in various different bases, as linear combination
 but in general the interpolating polynomials of a set of points is *unique*.
 The various interpolating polynomials are just the same polynomial expressed in different bases, e.g. Lagrange interpolation, Newton interpolation, etc.
 
+So how can we construct these polynomials? Let's try to find a set of suitable basis polynomials such
+that finding the coefficients of the polynomial interpolating the points becomes easy.
+
+A polynomial $p(t)$ is said to interpolate points $y_i$ at $x_i$ if $p(x_i) = y_i$ for all $i$.
+If we have a set of basis polynomials $b_i(t)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
+then finding the coefficients would be easy, since we could set the coefficient of $b_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by definition,
+and would therefore not change the value of $p(t)$ in that position.
+
+
+
 
 
