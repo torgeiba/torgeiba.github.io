@@ -126,17 +126,21 @@ So now we have found a polynomial that is zero on *all* the given points, so now
 Again, this is easy since we can simply omit that factor from the product.
 Let's say we want the polynomial to be nonzero at $x_i$, then we just omit the $(x - x_i)$ factor to get
 
-$$b(x) = (x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_n)$$
+$$b(x) = (x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)$$
 
 So far so good, but we have not yet found the desired basis polynomials. We didn't just require that the basis polynomials $b_i$ were non-zero at $x_i$ but that they
 should be equal to one at that point. The fix for this is also straightforward, we must find an expression for the value of the previous polynomial at $x_i$ and 
 divide by that value to get one. For any $b_i$ we can find the value by simply evaluating $b$ at $x_i$ to get
 
-$$b(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)$$
+$$b(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)$$
 
 Since this is just a scaling factor, the polynomial will still have the prescribed roots at $x_j$ for $i \neq j$, and we get the final form
 
-$$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_n)}{(x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)}$$
+$$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)}{(x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_d)}$$
+
+or in product notation
+
+$$b_i(x) = \prod_{\substack{j=0 j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
 
 
 
