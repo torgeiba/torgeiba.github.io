@@ -38,7 +38,7 @@ $$g(X) = ||r(X)||$$
 ## Parametric lines and curves
 
 The previous examples were abstract topological, and implicit non-parametric, respectively.
-We can also represent the line using an explicit parametric approach. In this case, we can define a function that takes a parameter $t, which is often conceptualized as the travel time, and gives an explicit point on the line. We can identify this point $X$ as a function of $t$ with
+We can also represent the line using an explicit parametric approach. In this case, we can define a function that takes a parameter $t$, which is often conceptualized as the travel time, and gives an explicit point on the line. We can identify this point $X$ as a function of $t$ with
 
 $$X(t) = (B - A) t + A$$
 
