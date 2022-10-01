@@ -131,7 +131,8 @@ Let's say we want the polynomial to be nonzero at $x_i$, then we just omit the $
 
 $$\ell(x) = (x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)$$
 
-So far so good, but we have not yet found the desired basis polynomials. We didn't just require that the basis polynomials $\ell_i$ were non-zero at $x_i$ but that they
+So far so good, but we have not yet found the desired basis polynomials.
+We didn't just require that the basis polynomials $\ell_i$ were non-zero at $x_i$ but that they
 should be equal to one at that point. The fix for this is also straightforward, we must find an expression for the value of the previous polynomial at $x_i$ and 
 divide by that value to get one. For any $\ell_i$ we can find the value by simply evaluating $\ell$ at $x_i$ to get
 
@@ -144,6 +145,9 @@ $$\ell_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d
 or in product notation
 
 $$\ell_i(x) = \prod_{\substack{j=0\\ j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
+
+![polynomial plot](/assets/images/lagrange_basis_polynomial.png)
+> A plot of the function $\frac{\left(\left(x\ -\frac{1}{2}\right)\left(x-1\right)\left(x-2\right)\left(x-\frac{5}{2}\right)\ \right)}{\left(\frac{3}{2}\ -\frac{1}{2}\right)\left(\frac{3}{2}-1\right)\left(\frac{3}{2}-2\right)\left(\frac{3}{2}-\frac{5}{2}\right)}$
 
 These basis polynomials are called the [Lagrange basis polynomials](https://en.wikipedia.org/wiki/Lagrange_polynomial)
 
