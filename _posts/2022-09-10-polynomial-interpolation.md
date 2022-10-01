@@ -110,7 +110,7 @@ So how can we construct these polynomials? Let's try to find a set of suitable b
 that finding the coefficients of the polynomial interpolating the points becomes easy.
 
 A polynomial $p(x)$ is said to interpolate points $y_i$ at $x_i$ if $p(x_i) = y_i$ for all $i$.
-If we have a set of basis polynomials $b_i(x)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
+If we have a set of basis polynomials $\ell_i(x)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
 then finding the coefficients would be easy, since we could simply set the coefficient of $b_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by 
 definition, and thereby canceling all other terms in the polynomials. They would therefore not change the value of $p(x)$ in that position, and we would get
 that $p(x_i) = y_i$, as required.
@@ -142,7 +142,6 @@ or in product notation
 
 $$b_i(x) = \prod_{\substack{j=0\\ j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
 
-
-
+These basis polynomials are called the [Lagrange basis polynomials](https://en.wikipedia.org/wiki/Lagrange_polynomial)
 
 
