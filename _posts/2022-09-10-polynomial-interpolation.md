@@ -1,6 +1,6 @@
 # Polynomial interpolation
 
-![A painting of polynomials by DALL-E](assets/images/DALL-E_2022-10-01_16.37.56.png)
+![A painting of polynomials by DALL-E](/assets/images/DALL-E_2022-10-01_16.37.56.png)
 
 ## Connect the dots
 
