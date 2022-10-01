@@ -140,7 +140,7 @@ $$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_d)}{
 
 or in product notation
 
-$$b_i(x) = \prod_{\substack{j=0 j \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
+$$b_i(x) = \prod_{\substack{j=0 j\\ \neq i}}^{d} \frac{(x - x_j)}{(x_i - x_j)}$$
 
 
 
