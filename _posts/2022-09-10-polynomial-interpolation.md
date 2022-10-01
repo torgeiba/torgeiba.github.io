@@ -31,7 +31,7 @@ and
 
 $$r(X) = X - p(X)$$
 
-These are vector valued functins, and a function $g$ that satisfies out requirements can then be defined as
+These are vector valued functions, and a function $g$ that satisfies out requirements can then be defined as
 
 $$g(X) = ||r(X)||$$
 
