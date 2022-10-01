@@ -150,7 +150,7 @@ These basis polynomials are called the [Lagrange basis polynomials](https://en.w
 
 ![polynomial plot](/assets/images/lagrange_basis_polynomial.png)
 > A plot of the function $\ell_2(x) = \frac{\left(x\ -\frac{1}{2}\right)\left(x-1\right)\left(x-2\right)\left(x-\frac{5}{2}\right)\}{\left(\frac{3}{2}\ -\frac{1}{2}\right)\left(\frac{3}{2}-1\right)\left(\frac{3}{2}-2\right)\left(\frac{3}{2}-\frac{5}{2}\right)}$
-> for the node sequence $ x_0 = \frac{1}{2}$, $x_1 = 1$, $x_2 = \frac{3}{2}$, $x_3 = 2$ and $x_4 = \frac{5}{2}$
+> for the node sequence $x_0 = \frac{1}{2}$, $x_1 = 1$, $x_2 = \frac{3}{2}$, $x_3 = 2$ and $x_4 = \frac{5}{2}$
 
 
 
