@@ -23,7 +23,15 @@ and
 
 $$||X - B|| \le  ||B - A||$$
 
-If we have a dot product then we could also have used it to find the projection $p(X)$ and rejection $r(X)$ of the point $X$ to and from the line
+If we have a dot product then we could also have used it to find the projection $p(X)$ and rejection $r(X)$ of the point $X$ to and from the line, where
 
 $$p(X)  =  \frac{(X - A) \cdot (B - A)}{(B - A) \cdot (B - A)} (B - A) + A$$
+
+and 
+
+$$r(X) = X - p(X)$$
+
+These are vector valued functins, and a function $g$ that satisfies out requirements can then be defined as
+
+$$g(X) = ||r(X)||$$
 
