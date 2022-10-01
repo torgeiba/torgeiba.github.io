@@ -25,5 +25,5 @@ $$||X - B|| \le  ||B - A||$$
 
 If we have a dot product then we could also have used it to find the projection $p(X)$ and rejection $r(X)$ of the point $X$ to and from the line
 
-$$p(X)  =  \fract{(X - A) \cdot (B - A)}{(B - A) \cdot (B - A)} (B - A) + A$$
+$$p(X)  =  \frac{(X - A) \cdot (B - A)}{(B - A) \cdot (B - A)} (B - A) + A$$
 
