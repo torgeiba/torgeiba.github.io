@@ -42,5 +42,7 @@ We can also represent the line using an explicit parametric approach. In this ca
 
 $$X(t) = (B - A) t + A$$
 
-This function returns $A$ when $t = 0$ and $B$ when $t = 1$
+This function returns $A$ when $t = 0$, $B$ when $t = 1$ and some point in the line segment when $t$ is in the interval $[0, 1]$
+
+
 
