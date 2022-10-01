@@ -136,7 +136,7 @@ $$b(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)
 
 Since this is just a scaling factor, the polynomial will still have the prescribed roots at $x_j$ for $i \neq j$, and we get the final form
 
-$$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_n)}{b(x_i) = (x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)}$$
+$$b_i(x) = \frac{(x - x_0) \ldots (x - x_{i-1}) (x - x_{i+1}) \ldots (x - x_n)}{(x_i - x_0) \ldots (x_i - x_{i-1}) (x_i - x_{i+1}) \ldots (x_i - x_n)}$$
 
 
 
