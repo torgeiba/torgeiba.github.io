@@ -1,5 +1,7 @@
 # Polynomial interpolation
 
+![A painting of polynomials by DALL-E](assets/images/DALL-E_2022-10-01_16.37.56.png)
+
 ## Connect the dots
 
 How do you get a straight line through two points? You could just represent the line, or line segment, between points $A$ and $B$ by the pair
