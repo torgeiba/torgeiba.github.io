@@ -109,10 +109,25 @@ The various interpolating polynomials are just the same polynomial expressed in 
 So how can we construct these polynomials? Let's try to find a set of suitable basis polynomials such
 that finding the coefficients of the polynomial interpolating the points becomes easy.
 
-A polynomial $p(t)$ is said to interpolate points $y_i$ at $x_i$ if $p(x_i) = y_i$ for all $i$.
-If we have a set of basis polynomials $b_i(t)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
-then finding the coefficients would be easy, since we could set the coefficient of $b_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by definition,
-and would therefore not change the value of $p(t)$ in that position.
+A polynomial $p(x)$ is said to interpolate points $y_i$ at $x_i$ if $p(x_i) = y_i$ for all $i$.
+If we have a set of basis polynomials $b_i(x)$ defined in such a way that $b_i(x_i) = 1$ and $b_i(x_j) = 0$ for all $i \neq j$,
+then finding the coefficients would be easy, since we could simply set the coefficient of $b_i$ to $y_i$ while all other basis functions would be zero at $x_i$ by 
+definition, and thereby canceling all other terms in the polynomials. They would therefore not change the value of $p(x)$ in that position, and we would get
+that $p(x_i) = y_i$, as required.
+
+Now, how do we come up with such basis functions? Let's start with considering polynomials on the form
+
+$$b(x) = (x - x_0)(x - x_1) \ldots (x - x_n)$$
+
+It is clear that $b(x)$ is zero at $x = x_i$ for all $i = 1 \ldots n$, since one of the factors in the product would be zero, 
+and thereby making the entire expression zero. An other property of this polynomial is that it is nonzero everywhere else, there are no other roots of the polynomial.
+
+So now we have found a polynomial that is zero on *all* the given points, so now we need to find a way to make the polynomial be non-zero on one of them.
+Again, this is easy since we can simply omit that factor from the product.
+Let's say we want the polynomial to be nonzero at $x_j$, then we just omit the $(x - x_j)$ factor to get
+
+$$b(x) = (x - x_0) \ldots (x - x_{j-1}) (x - x_{j+1}) \ldots (x - x_n)$$
+
 
 
 
