@@ -37,3 +37,5 @@ The result is a box function, which is discontinuous, but which it is still poss
 The integral wil be a piecewise linear function. 
 
 <img width="260" alt="box_function_integral" src="https://user-images.githubusercontent.com/5385533/196010869-f4f47695-0e9e-4532-91cc-03d363ca36d6.png">
+
+Using this along with taking appropriate limits of integration and using the symmetry of the sphere, it should be possible to derive an expression for the area of the intersection fo the disc and rectangle.
