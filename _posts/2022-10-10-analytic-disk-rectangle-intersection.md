@@ -1,28 +1,60 @@
 # Computing Analytic Disk-Rectangle Intersection Area
 
+## Subproblem 1 Translate and scale to unit circle
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/7lVBWc?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+## Subproblem 2: Clip rect against X and Y coordinate axes
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/NtyBRc?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 3: Flip all rectangles to top right quadrant
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/stKfDc?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+## Subproblem 4: Detect rectangles intersecting unit circle (not disk)
+
+Note that the implemented version only works if the rectangle is fully in the top right quadrant!
+The rectangle must be clipped against the axes.
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/NtGBWt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 5: Find intersection points of circle and rectangle
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftGfWt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+## Subproblem 6: Clip rectangle to intersection points
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/flyBDt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 7: Compute area of cap and triangle
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/flGfDt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+
+## Subproblem 8: Compute remaining area inside triangle
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftyfDt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 9: Combine the area of the remaining rectangle part with the triangle and cap
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/NlyfDt?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+## Subproblem 10: Combine the area of all four quadrant pieces of the rectangle
 
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftGBWd?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 10: Combine the area of all four quadrant pieces of the rectangle
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftGfWd?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
+## Subproblem 10b: Another way to visualize the result in 10
+
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftGBDd?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+
+## The final result
+
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/DssGzr?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
 ## Alternative approaches
 
