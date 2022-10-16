@@ -16,12 +16,12 @@ Output: The area of the intersecting area
 3. For each of the four quadrant rectangles:
     1. Flip the rectangle such that it lands in the top right quadrant, i.e the positive X and positive Y quadrant.
     2. Determine whether the rectangle intersects the unit circle
-      - If the rectangle does not intersect the unit circle, then it is either fully inside or fully outside the unit disk
-            - If the rectangle is fully outside, then we can skip to the next rectangle
-            - Otherwise we compute the area of the rectangle and add it to the total area
-      - Otherwise the rectangle intersects and we proceed with the next steps
+        - If the rectangle does not intersect the unit circle, then it is either fully inside or fully outside the unit disk 
+            - If the rectangle is fully outside, then we can skip to the next rectangle 
+            - Otherwise we compute the area of the rectangle and add it to the total area 
+        - Otherwise the rectangle intersects and we proceed with the next steps
     3. Find the intersection points of the rectangle and the unit circle.
-      - The rectangle and circle must intersect in exactly two points
+        - The rectangle and circle must intersect in exactly two points
     4. Find the rectangle that tightly bounds the two intersection points
     5. Compute the area of the [circular segment](https://en.wikipedia.org/wiki/Circular_segment) given by the two points
     6. Find the area of the triangle given by the three vertices at the bottom left of the rectangle bounding the intersection points, and the intersection points themselves
