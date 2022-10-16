@@ -41,10 +41,6 @@ The rectangle must be clipped against the axes.
 
 ## Subproblem 10: Combine the area of all four quadrant pieces of the rectangle
 
-
-
-## Subproblem 10: Combine the area of all four quadrant pieces of the rectangle
-
 <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ftGfWd?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 
 ## Subproblem 10b: Another way to visualize the result in 10
