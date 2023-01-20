@@ -28,7 +28,7 @@ We want to find the $z$ coordinate of $td$.
 We know that $P \cdot N = td \cdot N$.
 Solving for the scaling $t$ gives:
 
-$$ t  = \fract{P \cdot N}{d \cdot N} $$
+$$ t  = \frac{P \cdot N}{d \cdot N} $$
 
 The case where the denominator $d \cdot N$ is equal to zero corresponds to when the ray lies in the plane, and can therefore be excluded in an earlier stage of the system.
 The Z-value can then be found by computing $d_z t$, but since we assumed that $d_z$ was plus or minus one unit, we just get either $-t$ or $t$ depending on our choice.
