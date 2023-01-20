@@ -13,5 +13,5 @@ The projected triangle edge normals can then be found by performing a simple cou
 For a pixel with position vector $P$, a triangle with vertices $V_i = (x_i, y_i, z_i), 
 the 2D counter clockwise rotation matrix $\textbf{R}$, the edge function from the vertex $V_0$ to $V_1$ can be computed by:
 
-$$e(P) = (P - V_0) \cdot R (\frac{V_1}{z_1} - \frac{V_0}{z_0}) $$
+$$e(P) = (P - V_0) \cdot R \left( \frac{V_1}{z_1} - \frac{V_0}{z_0} \right) $$
 
