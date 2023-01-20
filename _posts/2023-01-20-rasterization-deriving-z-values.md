@@ -34,3 +34,9 @@ $$ t  = \frac{P \cdot N}{D \cdot N} $$
 
 The case where the denominator $D \cdot N$ is equal to zero corresponds to when the ray lies in the plane, and can therefore be excluded in an earlier stage of the system.
 The Z-value can then be found by computing $D_z t$, but since we assumed that $D_z$ was plus or minus one unit, we just get either $-t$ or $t$ depending on our choice.
+
+Notice that we do not require $D$ to be normalized, as we do not care about the length of $tD$, only the Z-value.
+Also notice that the expression for $t$ is not linear in $D$ and therefore does not vary linearly from pixel to pixel, since $D$ is in the denominator of the expression. But, if we only intend to use the Z-value to compare to other Z-values, then we can instead compute $frac{1}{Z}$ to get $D$ in the numerator, making the expression linear in $D$. Another advantage to using this reciprocal Z-value is that the division can be performed just once per triangle instead of for each pixel.
+There may also be precision advantages to using reciprocal Z. See e.g. [https://developer.nvidia.com/content/depth-precision-visualized]()
+
+
