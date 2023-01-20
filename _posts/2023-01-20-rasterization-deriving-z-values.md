@@ -18,15 +18,17 @@ we can figure out how much we need to scale the position vector of the pixel on 
 The function in question is given by the dot product by the triangle normal vector.
 
 We have:
-The position on the near plane corresponding to a pixel: $d$
-The triangle normal: $N$
-The triangle normal: $N$
-A point on the triangle plane $P$
-An unknown scaling value $t$
+- The position on the near plane corresponding to a pixel: $d$
+- The triangle normal: $N$
+- The triangle normal: $N$
+- A point on the triangle plane $P$
+- An unknown scaling value $t$
 
 We want to find the $z$ coordinate of $td$.
-We know that $P \cdot N = td \cdot N$
-Solving for the scaling $t$ gives 
+We know that $P \cdot N = td \cdot N$.
+Solving for the scaling $t$ gives:
+
 $$ t  = \fract{P \cdot N}{d \cdot N} $$
+
 The case where the denominator $d \cdot N$ is equal to zero corresponds to when the ray lies in the plane, and can therefore be excluded in an earlier stage of the system.
 The Z-value can then be found by computing $d_z t$, but since we assumed that $d_z$ was plus or minus one unit, we just get either $-t$ or $t$ depending on our choice.
