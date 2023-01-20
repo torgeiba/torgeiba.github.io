@@ -25,6 +25,9 @@ We have:
 
 We want to find the $z$ coordinate of $tD$.
 We know that $P \cdot N = tD \cdot N$.
+
+![RayPlaneIntersectionDiagram](https://user-images.githubusercontent.com/5385533/213801909-5d60ba16-345f-4b38-a099-bdde0199bde6.png)
+
 Solving for the scaling $t$ gives:
 
 $$ t  = \frac{P \cdot N}{D \cdot N} $$
