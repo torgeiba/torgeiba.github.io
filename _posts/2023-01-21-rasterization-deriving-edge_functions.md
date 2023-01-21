@@ -10,7 +10,7 @@ The screenspace edge normal can then be found by projecting this triangle normal
 An alternative approach is to use perspective projection on the vertices by dividing them by their Z-component, causing all the vertices to lie in the image plane.
 The projected triangle edge normals can then be found by performing a simple counter clockwise 2D rotation, given by $x' = -y$ and $y' = x$.
 
-For a pixel with position vector $P$, a triangle with vertices $V_i = (x_i, y_i, z_i), 
+For a pixel with position vector $P$, a triangle with vertices $V_i = (x_i, y_i, z_i)$, 
 the 2D counter clockwise rotation matrix $\textbf{R}$, the edge function from the vertex $V_0$ to $V_1$ can be computed by:
 
 $$e(P) = (P - V_0) \cdot R \left( \frac{V_1}{z_1} - \frac{V_0}{z_0} \right) $$
