@@ -17,4 +17,4 @@ $$e(P) = (P - V_0) \cdot \textbf{R} \left( \frac{V_1}{z_1} - \frac{V_0}{z_0} \ri
 
 Notice that the reciprocal Z-values appear again, like in the previous post, but this time, it's only the Z-values of the vertices themselves, not the ones that go into the Z-buffer after having been interpolated. Mathematically  we could also have scaled the function by $z_0 z_1$ to get rid of the divisions, since we only care about the sign of the edge function.
 
-The edge functions are related to barycentric coordinates, but since the barycentric coordinates are slightly more expenisve to compute, we will preferr the edge function where the barycentric coordinates are not needed.
+The edge functions are related to barycentric coordinates, but since the barycentric coordinates are slightly more expenisve to compute, we will prefer the edge function where the barycentric coordinates are not needed.
