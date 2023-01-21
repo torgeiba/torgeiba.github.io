@@ -13,7 +13,7 @@ The projected triangle edge normals can then be found by performing a simple cou
 For a pixel with position vector $P$, a triangle with vertices $V_i = (x_i, y_i, z_i)$, 
 the 2D counter clockwise rotation matrix $\textbf{R}$, the edge function from the vertex $V_0$ to $V_1$ can be computed by:
 
-$$e(P) = (P - V_0) \cdot R \left( \frac{V_1}{z_1} - \frac{V_0}{z_0} \right) $$
+$$e(P) = (P - V_0) \cdot \textbf{R} \left( \frac{V_1}{z_1} - \frac{V_0}{z_0} \right) $$
 
 Notice that the reciprocal Z-values appear again, like in the previous post, but this time, it's only the Z-values of the vertices themselves, not the ones that go into the Z-buffer after having been interpolated. Mathematically  we could also have scaled the function by $z_0 z_1$ to get rid of the divisions, since we only care about the sign of the edge function.
 
