@@ -25,6 +25,6 @@ If all the dot products are positive, then the view-direction is a member of the
 The normals of these planes can be found by taking the cross product of each of the ordered pairs of the vectors spanning the convex cone.
 The cross and dot products together amounts to the [triple-product](https://en.wikipedia.org/wiki/Triple_product). It can also equivalently be computed via determinants.
 
-The operation of computing cross and dot products, or triple products, is essentially the same as computing the matrix-vector product of the inverse of the matrix
-consisting of the spanning vectors with the view-direction, where the inverse is computed via [cramers rule](https://en.wikipedia.org/wiki/Cramer%27s_rule)
+The operation of computing cross and dot products, or triple products, is essentially the same as computing the matrix-vector product of the [inverse of the 3x3 matrix](https://en.wikipedia.org/wiki/Invertible_matrix#Inversion_of_3_×_3_matrices)
+consisting of the spanning vectors with the view-direction, up to a scaling factor. Note the connection between the explicit form of the 3x3 matrix inverse in terms of cross products and the determinant and [Cramers rule](https://en.wikipedia.org/wiki/Cramer%27s_rule). The scaling factor being the full determinant of the matrix of spanning vectors.
 
