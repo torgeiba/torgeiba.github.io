@@ -1,6 +1,7 @@
 # Rasterization: Software Rasterization Pipeline
 
 ![A painting of a rasterization pipeline by DALL-E](/assets/images/DALL-E_2023-02-10_22.00.36_-_An_artful_interpretation_of_a_technical_diagram_graph_of_a_computer_graphics_rasterization_pipeline_algorithm,_on_a_dark_background_with_neon_colored_.png)
+> A painting of a rasterization pipeline by DALL-E 2
 
 This post will simply be an outline of my plans for my CPU software rasterization project.
 
