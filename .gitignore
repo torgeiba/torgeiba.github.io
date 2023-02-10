@@ -5,3 +5,6 @@
 /.vs/VSWorkspaceState.json
 *.suo
 /.vs/Blog/FileContentIndex
+/assets/images/renameNoSpace.bat
+/assets/images/EdgeFunctionsDiagram.xcf
+/assets/images/RayPlaneIntersectionDiagram.xcf
