@@ -35,9 +35,9 @@ The cache line count could be used as a heuristic, or parameter, for tuning data
 ## Input and output
 
 The input to the procedure will be a pointer to a buffer of triangle vertex positions, a pointer to a buffer of triangle vertex indices,
-a triangle count, the instance index and instance transform.
+a triangle count, and triange index offset. The triangle input offset will be used to handle instancing and batched rendering.
 The output will be a Z-buffer to that can be used by the next shading steps, material calculation and so on, and a visibility buffer, which is simply a buffer, or image,
-of triangle indices. The indices will also have the instance index baked into them, so the index will have to be decoded to find the actual triangle index for the mesh.
+of triangle indices. The indices will also have the instance index baked into them (using the triangle index offset), so the index will have to be decoded to find the actual triangle index for the mesh.
 
 
 ## Frustum culling details
