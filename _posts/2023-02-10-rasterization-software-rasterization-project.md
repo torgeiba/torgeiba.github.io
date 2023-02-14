@@ -42,19 +42,39 @@ of triangle indices. The indices will also have the instance index baked into th
 
 ## Frustum culling details
 
+There are some notes on frustum culling on the [ryg blog here](https://fgiesen.wordpress.com/2010/10/17/view-frustum-culling/)
+
 ## Backface culling details
 
+When we have access to the normal, or equivalent information, we can simply backface cull triangles by computing a single dot product by the view direction and the
+triangle normal.
+
 ## Triangle setup details
+For computing triangle overlap one will need to compute the triangle edge functions. It is possible to save some work by making sure to only compute the parts
+that are invariant over the triangle just once. 
 
 ## Triangle binning details
 
+Triangle binning basically amounts to performing overestimated conservative rasterization, rasterizing triangles over tiles instead of pixels.
+
 ## Occlusion culling details
+
+For occlusion culling it makes sense to use a hierarchical depth buffer using conservative depth for all but the highest resolution level.
+If we at any level can find a set of tiles that completely conver the object to be drawn, e.g a triangle or bounding box, and all the depth values in those tiles
+have a depth value that is nearer than the nearest point of that object, then we can safely cull it.
+To find the nearest depth value of a triangle one can use rasterization, or one can compute the nearest depth of the camera space bounding box without needing to compute the other values.
 
 ## Rasterization and depth testing details
 
+
+
 ## Visibility buffer details
 
+every triangle index is an unsigned 32-bit integer value that represents the triangle index of the currently rendered mesh plus a triangle index offset given as a paramter to the rasterization function.
+
 ## Implementation details
+
+
 
 ## Test cases
 
