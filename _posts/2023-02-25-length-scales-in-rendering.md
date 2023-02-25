@@ -10,7 +10,7 @@ Here are some potentially relevant sizes for reference:
 - Grain of sand: 0.06 to 2.0 mm
 - Pixel distance on a 4K PC monitor: 0.18 mm
 - Size of a human pupil: 2-9 mm
-- Diameter of a human eye: About 2.5 cm.
+- Diameter of a human eye: About 2.5 cm
 - Interpupillary distance: About 6 cm
 - Viewing distance from PC monitor: about 60 cm
 - Size of a large PC monitor : 70 cm wide, 40 cm high
