@@ -22,7 +22,7 @@ So the smallest and largest sizes listed here in the same units (meters) for com
 - 0.00006
 - 6000000.0
 
-The scale difference is about $10^12$ or approximately $2^40$. The geometric mean is about 5.5 meters.
+The scale difference is about $10^{12}$ or approximately $2^{40}$. The geometric mean is about 5.5 meters.
 
 for an arena shooter style game you may only care about objects within at most a kilometer radius, in which case we may choose 1000 and 0.001 meters as our range,
 for which the geometric mean is exactly 1 meter.
