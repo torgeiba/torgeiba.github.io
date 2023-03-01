@@ -78,4 +78,21 @@ every triangle index is an unsigned 32-bit integer value that represents the tri
 
 ## Test cases
 
+### Triangle rendering test cases
+- Crossing frustum clipping planes
+- Trapped in a box ( all pixels covered )
+- Ground planes (large triangles with perfectly vertical normals)
+- Depth order ( overlapping triangles behind eachother rendered in various orders )
+- Behind camera
+- Behind "near plane"
+- Backfacing triangles
+- Intersecting triangles
+- Crossing camera view direction plane
+- Two triangles ( fullscreen )
+- One triangle  ( fullscreen )
+- Triangle orientations: Side/edge on triangle
 
+
+## Footnotes and references:
+
+[Visibility Buffer Rendering with Material Graphs, by John Hable](http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/)
