@@ -47,5 +47,11 @@ $a \times b =  (a_y b_z - a_z b_y) e_1 - (a_x b_z - a_z b_x) e_2 + (a_x b_y - a_
 Which matches the coordinate definition of the cross product. Notice that since we had $e_1 \times e_3$ we had to use anti-commutativity to flip the order,
 from which we pick up a negative sign, to obtain $e_2$.
 
+## Interpretation of the cross product
+
+Consider the case where the vectors $a$ and $b$ both lie in the plane spanned by $e_1$ and $e_2$, that is, the component of $e_3$ is zero.
+Then, the signed area of the parallelogram spanned by $a$ and $b$ has the same magnitude as the result of their cross product, namely,
+$\| a_x b_y - a_y b_x \|$. The same as the $e_3$ component of $a \times b$. This means that for general $a$ and $b$, the $e_3$ component is the same
+as the parallelogram spanned by the vectors $a$ and $b$ projected down on the $e_1 e_2$ plane. The corresponding is true for the other compoents.
 
 
