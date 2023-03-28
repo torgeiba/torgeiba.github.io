@@ -56,6 +56,14 @@ that are invariant over the triangle just once.
 ## Triangle binning details
 
 Triangle binning basically amounts to performing overestimated conservative rasterization, rasterizing triangles over tiles instead of pixels.
+A pixel is usually rasterized by sampling a single point, but a tile is a screen space axis aligned rectangular region.
+The basic sampling step for this is essentially a rectangle-triangle overlap test.
+In the 2D case it is possible to determine overlap by testing whether the tile is fully outside one of the triangle edges or the tile is fully outside the
+triangle bounding box. In the 3D case we do not always have appropriate bounding boxes for the triangles.
+Instead it is possible to instead use the test of whether the tile is fully outside one of the triangle edges or the triangle is fully outside one of the tile edges.
+This can be made efficient for a grid of tiles, and generalized to 3D and clipless rasterization, where the edges become planes for both triangles and tiles.
+The test is a series of dot products. The tile edges are axis aligned, so it is possible to omit one coordinate. For 2D this becomes a one-coordinate test.
+For 3D it becomes a two-coordinate test. It is probably possible to optimize this furher.
 
 ## Occlusion culling details
 
