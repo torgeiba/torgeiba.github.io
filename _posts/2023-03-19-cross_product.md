@@ -9,9 +9,8 @@ points in the direction given by the right hand rule (by convention), and has a 
 
 ## The coordinate formula description
 
-The cross product $c = a \times b$ of $a = \(a_x, a_y, a_z\)$ and $b = \(b_x, b_y, b_z\)$ is given by the formula
-$c = \( a_y b_z - a_z b_y, -a_x b_z + a_z b_x,  a_x b_y - a_y b_x \)$
-
+The cross product $c = a \times b$ of $a = (a_x, a_y, a_z)$ and $b = (b_x, b_y, b_z)$ is given by the formula
+$c = ( a_y b_z - a_z b_y, -a_x b_z + a_z b_x,  a_x b_y - a_y b_x )$
 
 ## An algebraic description
 
