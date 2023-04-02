@@ -70,9 +70,24 @@ Since we do not care about the length of the normal, just the sign of the dot pr
 the edge crosses the screen coordinate axes by a quarter turn. 
 Conceptually it is just an optimization of taking the cross product of two adjacent corner positions of the tile.
 
+The overlap test between the tile and the triangle in 3D is closely related to frustum culling with a skew frustum. However, because there are many tiles and they all share their edges, it is better to reuse as much computation and testing as possible instead of doing many full skew frustum - tetrahedon overlap tests.
+
+It is also worth remembering that the edges of the tiles can be defined to lie exactly on the sample point location, reducing the area of the tiles slightly compared 
+to the case where the edges were taken to line up with the pixel borders. However, this requires one to be extra careful with numerical precision and rasterization rules.
+
 ### Acceptance and rejection tests
 
+There are three basic outcomes of the overlap test. Full acceptance, full rejection, and partial overlap. If at any point there is full acceptance or rejection,
+then that branch of the computation can complete, and some savings can be had.
+The cases where there is full overlap must be split into two cases based on whether it is the triangle that fully covers the tile or vice versa.
+The outcome can be broken down into these cases:
 
+- The triangle fully covers the tile ( all triangle vertices are "outside" but around the tile )
+- The tile fully covers the triangle ( All triangle vertices are inside the tile )
+- The triangle is fully outside the tile
+- The triangle and tile partially overlap
+
+For the last case it is sufficient but not neccessary that some of the  triangle vertices are inside the tile. But is is neccessary that some edge crossings occurr.
 
 ## Occlusion culling details
 
@@ -115,3 +130,5 @@ every triangle index is an unsigned 32-bit integer value that represents the tri
 [Visibility Buffer Rendering with Material Graphs, by John Hable](http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/)
 
 [Rasterization on Larrabee, by Michael Abrash](https://www.cs.cmu.edu/afs/cs/academic/class/15869-f11/www/readings/abrash09_lrbrast.pdf)
+
+[Conservative rasterization, By Tomas Akenine-Moller and Timo Aila](https://fileadmin.cs.lth.se/graphics/research/papers/2005/cr/conservative.pdf)
