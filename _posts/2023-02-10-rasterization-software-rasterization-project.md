@@ -50,6 +50,7 @@ When we have access to the normal, or equivalent information, we can simply back
 triangle normal.
 
 ## Triangle setup details
+
 For computing triangle overlap one will need to compute the triangle edge functions. It is possible to save some work by making sure to only compute the parts
 that are invariant over the triangle just once. 
 
@@ -57,13 +58,21 @@ that are invariant over the triangle just once.
 
 Triangle binning basically amounts to performing overestimated conservative rasterization, rasterizing triangles over tiles instead of pixels.
 A pixel is usually rasterized by sampling a single point, but a tile is a screen space axis aligned rectangular region.
-The basic sampling step for this is essentially a rectangle-triangle overlap test.
+The basic sampling step for this is essentially a rectangle-triangle overlap test. This is essentially overestimated conservative rasterization.
 In the 2D case it is possible to determine overlap by testing whether the tile is fully outside one of the triangle edges or the tile is fully outside the
 triangle bounding box. In the 3D case we do not always have appropriate bounding boxes for the triangles.
 Instead it is possible to instead use the test of whether the tile is fully outside one of the triangle edges or the triangle is fully outside one of the tile edges.
 This can be made efficient for a grid of tiles (where many edges are shared), and generalized to 3D and clipless rasterization where the edges become planes for both triangles and tiles.
+
 The test is a series of dot products. The tile edges are axis aligned, so it is possible to omit one coordinate. For 2D this becomes a one-coordinate test.
-For 3D it becomes a two-coordinate test. It is probably possible to optimize this furher.
+For 3D it becomes a two-coordinate test. The vertical tile edges have normals with zero $y$ (vertical) coordinate. 
+Since we do not care about the length of the normal, just the sign of the dot products, we can just rotate the vector from the camera to where
+the edge crosses the screen coordinate axes by a quarter turn. 
+Conceptually it is just an optimization of taking the cross product of two adjacent corner positions of the tile.
+
+### Acceptance and rejection tests
+
+
 
 ## Occlusion culling details
 
@@ -104,3 +113,5 @@ every triangle index is an unsigned 32-bit integer value that represents the tri
 ## Footnotes and references:
 
 [Visibility Buffer Rendering with Material Graphs, by John Hable](http://filmicworlds.com/blog/visibility-buffer-rendering-with-material-graphs/)
+
+[Rasterization on Larrabee, by Michael Abrash](https://www.cs.cmu.edu/afs/cs/academic/class/15869-f11/www/readings/abrash09_lrbrast.pdf)
