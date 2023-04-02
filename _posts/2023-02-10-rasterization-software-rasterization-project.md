@@ -89,6 +89,8 @@ The outcome can be broken down into these cases:
 
 For the last case it is sufficient but not neccessary that some of the  triangle vertices are inside the tile. But is is neccessary that some edge crossings occurr.
 
+When evaluating the edge function of a triangle on the tile corners it is sufficient to only test the nearest corner, which can be selected using the direction of the edge normal.
+
 ## Occlusion culling details
 
 For occlusion culling it makes sense to use a hierarchical depth buffer using conservative depth for all but the highest resolution level.
